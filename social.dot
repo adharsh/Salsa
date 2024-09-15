@@ -50,7 +50,7 @@ digraph SalsaDanceMoves {
   // Level 2d
   Guapea -> Sencillo -> "Dile Que No Position";
   Guapea -> Setenta -> "Dile Que No Position";
-  "Dile Que No Position" -> "Leader Arm Extension Flare" -> Guapea;
+  //"Dile Que No Position" -> "Flare - Leader Left Arm Extension" -> Guapea;
 
   // Level 3a
   Guapea -> Vacila -> "Dile Que No Position";
@@ -67,7 +67,7 @@ digraph SalsaDanceMoves {
   "Right-to-Right" -> Dedo -> "Dile Que No Position (Right-to-Right)";
   "Right-to-Right" -> Montana -> Guapea;
   Montana -> Mambo -> Guapea;
-  "Dile Que No Position (Right-to-Right)" -> "Flare - Leader Left Arm Extension" -> "Dile Que No Position (Right-to-Right)";
+  //"Dile Que No Position (Right-to-Right)" -> "Flare - Leader Left Arm Extension" -> "Dile Que No Position (Right-to-Right)";
 
   // Level 3c
   "Dile Que No Position" -> Peina -> Guapea;
