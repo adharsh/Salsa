@@ -31,14 +31,16 @@ digraph SalsaDanceMoves {
   "Dile Que No Position (Right-to-Right)" -> Pasea;
   Pasea -> Guapea;
   Exhibe -> "Dile Que No Position";
-  Enchufa -> "Closed Position";
-  "Closed Position" -> "Caminamos Arriba" -> "Caminamos Abajo";
-  "Closed Position" -> "Caminamos Abajo" -> "Caminamos Arriba";
-  "Caminamos Arriba" -> Basico;
-  "Caminamos Abajo" -> Basico;
-  "Caminamos Arriba" -> "Lleva Abajo";
-  "Caminamos Abajo" -> "Lleva Abajo";
-  "Lleva Abajo" -> Exhibe;
+  
+  // Closed Position - usually only in beginning, so commented out
+  // "Dile Que No Position" -> "Closed Position";
+  // "Closed Position" -> "Caminamos Arriba" -> "Caminamos Abajo";
+  // "Closed Position" -> "Caminamos Abajo" -> "Caminamos Arriba";
+  // "Caminamos Arriba" -> Basico;
+  // "Caminamos Abajo" -> Basico;
+  // "Caminamos Arriba" -> "Lleva Abajo";
+  // "Caminamos Abajo" -> "Lleva Abajo";
+  // "Lleva Abajo" -> Exhibe;
 
   // Level 2a
   Enchufa -> Enchufla;
