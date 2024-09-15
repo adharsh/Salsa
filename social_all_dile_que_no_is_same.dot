@@ -43,7 +43,7 @@ digraph SalsaDanceMoves {
   // "Lleva Abajo" -> Exhibe;
 
   // Level 2a
-  Enchufa -> Enchufla;
+  Enchufa -> Enchufa;
   Guapea -> Candado -> Guapea;
   Guapea -> Kentucky -> Guapea;
   Guapea -> "Pa Ti Pa Mi" -> Guapea;
