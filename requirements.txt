@@ -1,0 +1,3 @@
+networkx
+types-networkx
+pydot
