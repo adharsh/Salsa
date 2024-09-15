@@ -82,7 +82,7 @@ digraph SalsaDanceMoves {
   // Level 3c
   "Dile Que No Position" -> Peina -> Guapea;
   "Dile Que No Position" -> Enrosca -> Guapea;
-  Guapea -> "Setenta Y Uno" -> Guapea;
+  Guapea -> "Setenta Y Uno" -> "Dile Que No Position";
   "Dile Que No Position" -> "Coca Cola" -> "Dile Que No Position";
 
   // Level 3d
