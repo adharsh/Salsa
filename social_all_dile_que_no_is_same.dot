@@ -22,18 +22,26 @@ digraph SalsaDanceMoves {
   edge [color=black];
 
   // Level 1
-  Guapea -> Enchufla;
-  Enchufla -> "Dile Que No Position";
-  Enchufla -> "Dile Que No Position";
+  Guapea -> Enchufa;
+  Enchufa -> "Dile Que No Position";
+  Enchufa -> "Dile Que No Position";
   "Dile Que No Position" -> Guapea;
   "Dile Que No Position" -> Exhibe;
   "Dile Que No Position" -> Pasea;
   "Dile Que No Position" -> Pasea;
   Pasea -> Guapea;
   Exhibe -> "Dile Que No Position";
+  Enchufa -> "Closed Position";
+  "Closed Position" -> "Caminamos Arriba" -> "Caminamos Abajo";
+  "Closed Position" -> "Caminamos Abajo" -> "Caminamos Arriba";
+  "Caminamos Arriba" -> Basico;
+  "Caminamos Abajo" -> Basico;
+  "Caminamos Arriba" -> "Lleva Abajo";
+  "Caminamos Abajo" -> "Lleva Abajo";
+  "Lleva Abajo" -> Exhibe;
 
   // Level 2a
-  Enchufla -> Enchufla;
+  Enchufa -> Enchufla;
   Guapea -> Candado -> Guapea;
   Guapea -> Kentucky -> Guapea;
   Guapea -> "Pa Ti Pa Mi" -> Guapea;
