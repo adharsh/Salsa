@@ -1,0 +1,81 @@
+
+/*
+Notes
+- Guapea can be skipped
+- Rueda moves, add *, can be disabled
+
+Others:
+- https://bachatasteps.com/?topic=salsa&options=newest
+- https://www.makelinux.net/salsa/
+- guapea -> familia -> guapea, does it end in dilequeno?
+- tf is traslado?
+- la cruz ends in dile que no position or guapea?
+- exhibe (right-to-right), only option is pasea?
+
+Can all dile que no positions can be right-to-right?
+
+*/
+
+digraph SalsaDanceMoves {
+  rankdir=LR; 
+  node [shape=box];
+  edge [color=black];
+
+  // Level 1
+  Guapea -> Enchufla;
+  Enchufla -> "Dile Que No Position";
+  Enchufla -> "Dile Que No Position (Right-to-Right)";
+  "Dile Que No Position" -> Guapea;
+  "Dile Que No Position" -> Exhibe;
+  "Dile Que No Position" -> Pasea;
+  "Dile Que No Position (Right-to-Right)" -> Pasea;
+  Pasea -> Guapea;
+  Exhibe -> "Dile Que No Position";
+
+  // Level 2a
+  Enchufla -> Enchufla;
+  Guapea -> Candado -> Guapea;
+  Guapea -> Kentucky -> Guapea;
+  Guapea -> "Pa Ti Pa Mi" -> Guapea;
+
+  // Level 2b
+  Guapea -> "Prima Con La Hermana" -> "Dile Que No Position";
+  Guapea -> Familia -> Guapea;
+
+  // Level 2c
+  Exhibe -> Rodeo -> "Dile Que No Position";
+  Exhibe -> "Rodeo Doble" -> "Dile Que No Position";
+  Guapea -> "La Cruz" -> Guapea;
+
+  // Level 2d
+  Guapea -> Sencillo -> "Dile Que No Position";
+  Guapea -> Setenta -> "Dile Que No Position";
+  "Dile Que No Position" -> "Leader Arm Extension Flare" -> Guapea;
+
+  // Level 3a
+  Guapea -> Vacila -> "Dile Que No Position";
+  Guapea -> "Vacila Con La Mano" -> "Dile Que No Position";
+  Guapea -> "Vacilense Los Dos" -> "Dile Que No Position";
+  Guapea -> "Right-to-Right";
+  "Right-to-Right" -> "Medio Sombrero" -> "Dile Que No Position (Right-to-Right)";
+  "Dile Que No Position (Right-to-Right)" -> "Exhibe (Right-to-Right)" -> "Dile Que No Position (Right-to-Right)";
+
+  // Level 3b
+  "Right-to-Right" -> Sombrero -> Guapea;
+  Sombrero -> Mambo -> Guapea;
+  "Dile Que No Position (Right-to-Right)" -> Ola -> Guapea;
+  "Right-to-Right" -> Dedo -> "Dile Que No Position (Right-to-Right)";
+  "Right-to-Right" -> Montana -> Guapea;
+  Montana -> Mambo -> Guapea;
+  "Dile Que No Position (Right-to-Right)" -> "Flare - Leader Left Arm Extension" -> "Dile Que No Position (Right-to-Right)";
+
+  // Level 3c
+  "Dile Que No Position" -> Peina -> Guapea;
+  "Dile Que No Position" -> Enrosca -> Guapea;
+  Guapea -> "Setenta Y Uno" -> Guapea;
+  "Dile Que No Position" -> "Coca Cola" -> "Dile Que No Position";
+
+  // Level 3d
+  Guapea -> "Doble Cero" -> "Dile Que No Position";
+  Guapea -> "Setenta Y Tres" -> "Dile Que No Position";
+}
