@@ -12,9 +12,9 @@ xdot social.dot
 xdot social_all_dile_que_no_is_same.dot
 ```
 
-To generate the `social_all_dile_que_no_is_same.dot` file, run:
+To generate the `social_all_dile_que_no_is_same.dot` file and images, run:
 ```bash
-./all_dile_que_no_is_same.sh
+./update.sh
 ```
 
 ![](images/social.png)
