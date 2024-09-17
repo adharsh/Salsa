@@ -17,7 +17,7 @@ To generate the `social_all_dile_que_no_is_same.dot` file and images, run:
 ./update.sh
 ```
 
-![](images/social.png)
-![](images/social_all_dile_que_no_is_same.png)
+![](imgs/social.png)
+![](imgs/social_all_dile_que_no_is_same.png)
 
 Note: Not sure if all dile que no's can be treated the same, hence the two different images above.
