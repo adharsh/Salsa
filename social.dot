@@ -1,5 +1,9 @@
 
 /*
+Example choreographies:
+- peina, peina la extension (turn myself, turn partner), pa ti pa mi
+- echufa, enchufa, exhibe rodeo (or rodeo double), peina
+
 Notes
 - Guapea can be skipped
 - Rueda moves, add *, can be disabled
@@ -83,6 +87,7 @@ digraph SalsaDanceMoves {
 
   // Level 3c
   "Dile Que No Position" -> Peina -> Guapea;
+  Peina -> "Peina La Extension" -> Guapea;
   "Dile Que No Position" -> Enrosca -> Guapea;
   Guapea -> "Setenta Y Uno" -> "Dile Que No Position";
   "Dile Que No Position" -> "Coca Cola" -> "Dile Que No Position";
