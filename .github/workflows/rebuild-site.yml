@@ -1,0 +1,17 @@
+# adhar.sh/salsa renders social.dot; ask Netlify to rebuild the site when it changes.
+name: Rebuild adhar.sh
+
+on:
+  push:
+    branches: [master]
+    paths: ["social.dot"]
+
+permissions: {}
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl --fail --silent --show-error -X POST -d '{}' "$NETLIFY_BUILD_HOOK"
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
